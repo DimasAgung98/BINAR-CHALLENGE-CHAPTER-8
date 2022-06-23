@@ -1,0 +1,762 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "BINAR CHALLENGE CHAPTER 8 GROUP 4",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000"
+    }
+  ],
+  "paths": {
+    "/api/v1/players": {
+      "get": {
+        "tags": [
+          "GET METHOD"
+        ],
+        "summary": "Get All Players",
+        "description": "Get All Players",
+        "operationId": "getAllPlayers",
+        "responses": {
+          "200": {
+            "description": "Get All Players",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "999"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 23 Jun 2022 12:51:04 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"3e7-4WKZbM3ECrwXSATq+acRhQ2B1q0\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "createdAt": {
+                            "type": "string",
+                            "example": "timestamp"
+                          },
+                          "email": {
+                            "type": "string",
+                            "example": "string"
+                          },
+                          "experience": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "id": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "lvl": {
+                            "type": "number",
+                            "example": 0
+                          },
+                          "password": {
+                            "type": "string",
+                            "example": "string"
+                          },
+                          "updatedAt": {
+                            "type": "string",
+                            "example": "timestamp"
+                          },
+                          "username": {
+                            "type": "string",
+                            "example": "string"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "createdAt": "timestamp",
+                          "email": "string",
+                          "experience": 0,
+                          "id": 1,
+                          "lvl": 0,
+                          "password": "string",
+                          "updatedAt": "timestamp",
+                          "username": "string"
+                        },
+                        {
+                          "createdAt": "timestamp",
+                          "email": "string",
+                          "experience": 0,
+                          "id": 2,
+                          "lvl": 0,
+                          "password": "string",
+                          "updatedAt": "timestamp",
+                          "username": "string"
+                        }
+                      ]
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "Success"
+                    }
+                  }
+                },
+                "examples": {
+                  "Get All Players": {
+                    "value": {
+                      "data": [
+                        {
+                          "createdAt": "timestamp",
+                          "email": "string",
+                          "experience": 0,
+                          "id": 1,
+                          "lvl": 0,
+                          "password": "string",
+                          "updatedAt": "timestamp",
+                          "username": "string"
+                        },
+                        {
+                          "createdAt": "timestamp",
+                          "email": "string",
+                          "experience": 0,
+                          "id": 2,
+                          "lvl": 0,
+                          "password": "string",
+                          "updatedAt": "timestamp",
+                          "username": "string"
+                        }
+                      ],
+                      "result": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "POST METHOD"
+        ],
+        "summary": "Create New Player",
+        "description": "Create New Player",
+        "operationId": "createNewPlayer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "string"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "string"
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "string"
+                  }
+                }
+              },
+              "example": {
+                "email": "string",
+                "password": "string",
+                "username": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Create New Player",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "261"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Wed, 22 Jun 2022 14:11:21 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"105-fYjAqTBwRy9WDDia8ebD0LcGGe0\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "createdAt": {
+                          "type": "string",
+                          "example": "timestamp"
+                        },
+                        "email": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "experience": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "id": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "lvl": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "password": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "example": "timestamp"
+                        },
+                        "username": {
+                          "type": "string",
+                          "example": "string"
+                        }
+                      }
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "Success"
+                    }
+                  }
+                },
+                "examples": {
+                  "Create New Player": {
+                    "value": {
+                      "data": {
+                        "createdAt": "timestamp",
+                        "email": "string",
+                        "experience": 0,
+                        "id": 0,
+                        "lvl": 0,
+                        "password": "string",
+                        "updatedAt": "timestamp",
+                        "username": "string"
+                      },
+                      "result": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/players/exp/{id}": {
+      "post": {
+        "tags": [
+          "POST METHOD"
+        ],
+        "summary": "Update Player Experience By ID",
+        "description": "Update Player Experience By ID",
+        "operationId": "updatePlayerExperienceById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "exp": {
+                    "type": "number",
+                    "example": 10
+                  }
+                }
+              },
+              "example": {
+                "exp": 10
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Update Player Experience By ID",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "92"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 23 Jun 2022 13:13:44 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"5c-wjtUUs2/26FrAJpNiNGzTmsfFBI\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Player with id = 3 gain 10 experience. Total experience = 0"
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "SUCCESS"
+                    }
+                  }
+                },
+                "examples": {
+                  "Update Player Experience By ID": {
+                    "value": {
+                      "message": "Player with id = 3 gain 10 experience. Total experience = 0",
+                      "result": "SUCCESS"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "example": "3"
+          }
+        }
+      ]
+    },
+    "/api/v1/players/{id}": {
+      "get": {
+        "tags": [
+          "GET METHOD"
+        ],
+        "summary": "Get Player By ID",
+        "description": "Get Player By ID",
+        "operationId": "getPlayerById",
+        "responses": {
+          "200": {
+            "description": "Get Player By ID",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "279"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 23 Jun 2022 13:01:43 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"117-XMeNnylCYdyADzmd+9LEPByIeTk\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "createdAt": {
+                          "type": "string",
+                          "example": "timestamp"
+                        },
+                        "email": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "experience": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "id": {
+                          "type": "number",
+                          "example": 1
+                        },
+                        "lvl": {
+                          "type": "number",
+                          "example": 0
+                        },
+                        "password": {
+                          "type": "string",
+                          "example": "string"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "example": "timestamp"
+                        },
+                        "username": {
+                          "type": "string",
+                          "example": "string"
+                        }
+                      }
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "Success"
+                    }
+                  }
+                },
+                "examples": {
+                  "Get Player By ID": {
+                    "value": {
+                      "data": {
+                        "createdAt": "timestamp",
+                        "email": "string",
+                        "experience": 0,
+                        "id": 1,
+                        "lvl": 0,
+                        "password": "string",
+                        "updatedAt": "timestamp",
+                        "username": "string"
+                      },
+                      "result": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "PUT METHOD"
+        ],
+        "summary": "Update Player Level By ID",
+        "description": "Update Player Level By ID",
+        "operationId": "updatePlayerLevelById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "lvl": {
+                    "type": "number",
+                    "example": 10
+                  }
+                }
+              },
+              "example": {
+                "lvl": 10
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Update Player Level By ID",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "71"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 23 Jun 2022 13:13:15 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"47-tR/lbalqK95mGT0r8P/H1n2rYps\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Player with id: 3 successfully updated"
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "Success"
+                    }
+                  }
+                },
+                "examples": {
+                  "Update Player Level By ID": {
+                    "value": {
+                      "message": "Player with id: 3 successfully updated",
+                      "result": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DELETE METHOD"
+        ],
+        "summary": "Delete Player By ID",
+        "description": "Delete Player By ID",
+        "operationId": "deletePlayerById",
+        "responses": {
+          "200": {
+            "description": "Delete Player By ID",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string",
+                  "example": "*"
+                }
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "keep-alive"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "76"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Thu, 23 Jun 2022 13:04:25 GMT"
+                }
+              },
+              "ETag": {
+                "schema": {
+                  "type": "string",
+                  "example": "W/\"4c-qjPZxaJ3ukOkBSqoAEhDQMDxJX4\""
+                }
+              },
+              "Keep-Alive": {
+                "schema": {
+                  "type": "string",
+                  "example": "timeout=5"
+                }
+              },
+              "X-Powered-By": {
+                "schema": {
+                  "type": "string",
+                  "example": "Express"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Player with id: 4, was deleted successfully"
+                    },
+                    "result": {
+                      "type": "string",
+                      "example": "Success"
+                    }
+                  }
+                },
+                "examples": {
+                  "Delete Player By ID": {
+                    "value": {
+                      "message": "Player with id: 4, was deleted successfully",
+                      "result": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "example": "3"
+          }
+        }
+      ]
+    }
+  }
+}
