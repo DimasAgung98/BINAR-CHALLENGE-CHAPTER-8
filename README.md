@@ -31,7 +31,7 @@ $ npm run start
 ## Tasks
 Jika teman-teman sudah berhasil menjalankan aplikasi RESTful API dari repository ini, teman-teman perlu melakukan dua hal:
 1. Membuat dokumentasi API dengan Swagger
-    - [V] Baca code repository RESTful API ini baik-baik
+    - [x] Baca code repository RESTful API ini baik-baik
     - [ ] Buat dokumentasi untuk semua endpoint yang terdaftar di router
     - [ ] Dokumentasi melingkupi : 
         - [ ] HTTP method
