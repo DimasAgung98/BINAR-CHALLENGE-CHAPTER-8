@@ -37,7 +37,7 @@ Jika teman-teman sudah berhasil menjalankan aplikasi RESTful API dari repository
         - [x] HTTP method
         - [x] URL
         - [x] URL parameter (jika ada)
-        - [x] Query parameter (jika ada)
+        - [ ] Query parameter (jika ada)
         - [x] Request body (jika ada)
         - [x] format response
     - [x] Pasang dokumentasi Swagger dalam satu routing
