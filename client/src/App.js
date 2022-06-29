@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+
 
 function App() {
   return (
@@ -7,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          CHALLENGE CHAPTER 8 KELOMPOK 3
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://localhost:4000/docs"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Open Documentation
         </a>
       </header>
     </div>
