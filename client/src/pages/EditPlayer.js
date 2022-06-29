@@ -1,6 +1,15 @@
+import React from 'react'
+//IMPORT COMPONETS
+import Navbar from '../components/Navbar';
+import Form from '../components/Form';
+
 function EditPlayer() {
     return (
-      <h1>ini halaman form edit player</h1>
+      <>
+        <Navbar/>
+        <h2 class="text-center text-dark mt-5">UPDATE USER</h2>
+        <Form/>
+      </>
     );
   }
   

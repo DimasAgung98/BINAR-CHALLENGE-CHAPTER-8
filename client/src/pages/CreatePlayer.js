@@ -1,20 +1,14 @@
+import React from 'react';
+//IMPORT COMPONETS
+import Navbar from '../components/Navbar';
+import Form from '../components/Form';
+
 function CreatePlayer() {
     return (
     <>
-        <div>
-        <h1>ini halaman form create player</h1> 
-        <br/>
-        USERNAME <input></input>
-        <br/>
-        EMAIL <input></input>
-        <br/>
-        PASSWORD <input></input>
-        </div>
-        
-        <a href="http://localhost:3000/api/v1/players">
-        <button>BACK DHASBOARD</button>
-        <button>SUBMIT</button>
-      </a>
+        <Navbar/>
+        <h2 class="text-center text-dark mt-5">CREATE USER</h2>
+        <Form/>
     </>
     );
   }

@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './css/App.css';
 
@@ -13,10 +14,14 @@ function App() {
         <a
           className="App-link"
           href="http://localhost:4000/docs"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Open Documentation
+        </a>
+        <a
+          className="App-link"
+          href="http://localhost:3000/api/v1/players"
+        >
+          Open Dashboard
         </a>
       </header>
     </div>

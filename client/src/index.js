@@ -1,10 +1,16 @@
+//IMPORT REACT
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
-import App from './App';
-import GetAllPlayers from './pages/GetAllPlayer';
-import EditPlayer from './pages/EditPlayer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//IMPORT GLOBAL CSS
+import './css/index.css';
+//IMPORT PAGES
+import App from './App';
+import GetAllPlayers from './pages/Dashboard';
+import CreatePlayer from './pages/CreatePlayer';
+import EditPlayer from './pages/EditPlayer';
+//IMPORT BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +18,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="/api/v1/players" element={<GetAllPlayers/>}/>
-      <Route path="/api/v1/players/exp/:id" element={<EditPlayer/>}/>
+      <Route path="/create-player" element={<CreatePlayer/>}/>
+      <Route path="/edit-player" element={<EditPlayer/>}/>
     </Routes>
   </BrowserRouter>
 );
