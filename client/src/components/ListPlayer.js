@@ -3,6 +3,8 @@ import React from 'react';
 import '../css/ListPlayer.css';
 //IMPORT REACT ICONS
 import {FaPlusCircle} from 'react-icons/fa';
+//IMPORT COMPONENT
+import Search from '../components/Search';
 
 function ListPlayer() {
   return (
@@ -10,8 +12,10 @@ function ListPlayer() {
       <div class="text-center pt-5 mb-3">
         <h2><i class="fa-solid fa-users me-2"></i>PLAYER LIST</h2>
       </div>
-      <div class="container">
-        <div class="mb-2">
+      
+      <div class="container mt-4">
+      <Search/>
+        <div class="mt-4">
           <a href="/create-player" id="createbutton" class="btn btn-createUser"> <i class="me-2"><FaPlusCircle/></i>CREATE NEW USER</a>
         </div>
         <table class="table my-4">
