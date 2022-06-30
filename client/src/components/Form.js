@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../css/Form.css'
+import { Modal, Button } from 'react-bootstrap';
 
 
 function FormCreateUser() {
+    const [show, setShow] = useState(false);
+    const handleModal = () => setShow(true);
+    const closeModal = () => setShow(false);
+
   return (
     <>
         <div class="container">
@@ -26,12 +31,25 @@ function FormCreateUser() {
                             <input type="number" class="form-control" id="EXP" aria-describedby="experience" placeholder="EXP"/>
                         </div>
                     </form>
-                    <a href='/api/v1/players' class="text-center"><button class="btn btn-success px-5 mb-2 w-100">SUBMIT</button></a>
-                    <a href='/api/v1/players' class="text-center"><button class="btn btn-primary w-100">BACK</button></a>
+                    <Button onClick={handleModal} className="btn btn-success px-5 mb-2 w-100">SUBMIT</Button>
+                    <a href='/api/v1/players'><button class="btn btn-primary w-100">BACK</button></a>
                 </div>
                 </div>
             </div>
         </div>
+        <Modal show={show} onHide={closeModal}>
+            <Modal.Header>
+                DATA RESULT
+            </Modal.Header>
+
+            <Modal.Body>
+
+            </Modal.Body>
+
+            <Modal.Footer>
+                <button onClick={closeModal}>Close</button>
+            </Modal.Footer>
+        </Modal>
     </>
   )
 }

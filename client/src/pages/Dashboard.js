@@ -1,7 +1,7 @@
 import React from 'react';
 //IMPORT COMPONETS
 import Navbar from '../components/Navbar';
-import ListPlayer from '../components/ListPlayer'
+import ListPlayer from '../components/ListPlayer';
 
 
 function GetAllPlayer() {

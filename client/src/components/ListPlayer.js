@@ -34,9 +34,9 @@ function ListPlayer() {
               <td>eyJwYXNzd29yZCI6IkRpbWFzIiwiaWF0IjoxNTE2MjM5MDIyfQ</td>
               <td>500</td>
               <td>100</td>
-              <td><a href="#" class="btn btn-success">Details</a></td>
+              <td><a href="/" class="btn btn-success">Details</a></td>
               <td><a href="/edit-player" class="btn btn-primary">Update</a></td>
-              <td><a href="#" class="btn btn-danger">Delete</a></td>
+              <td><a href="/" class="btn btn-danger">Delete</a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -45,9 +45,9 @@ function ListPlayer() {
               <td>eyJwYXNzd29yZCI6Ik1ySGFyeW8iLCJpYXQiOjE1MTYyMzkwMjJ9</td>
               <td>200</td>
               <td>150</td>
-              <td><a href="#" class="btn btn-success">Details</a></td>
+              <td><a href="/" class="btn btn-success">Details</a></td>
               <td><a href="/edit-player" class="btn btn-primary">Update</a></td>
-              <td><a href="#" class="btn btn-danger">Delete</a></td>
+              <td><a href="/" class="btn btn-danger">Delete</a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
@@ -56,9 +56,9 @@ function ListPlayer() {
               <td>eyJwYXNzd29yZCI6IllvbGFuZGFCaW5hciIsImlhdCI6MTUxNjIzOTAyMn0</td>
               <td>430</td>
               <td>300</td>
-              <td><a href="#" class="btn btn-success">Details</a></td>
+              <td><a href="/" class="btn btn-success">Details</a></td>
               <td><a href="/edit-player" class="btn btn-primary">Update</a></td>
-              <td><a href="#" class="btn btn-danger">Delete</a></td>
+              <td><a href="/" class="btn btn-danger">Delete</a></td>
             </tr>
             <tr>
               <th scope="row">4</th>
@@ -67,9 +67,9 @@ function ListPlayer() {
               <td>eyJwYXNzd29yZCI6Ik1hc3JpcyIsImlhdCI6MTUxNjIzOTAyMn0</td>
               <td>250</td>
               <td>190</td>
-              <td><a href="#" class="btn btn-success">Details</a></td>
+              <td><a href="/" class="btn btn-success">Details</a></td>
               <td><a href="/edit-player" class="btn btn-primary">Update</a></td>
-              <td><a href="#" class="btn btn-danger">Delete</a></td>
+              <td><a href="/" class="btn btn-danger">Delete</a></td>
             </tr>
           </tbody>
         </table>
